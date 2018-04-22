@@ -1,0 +1,70 @@
+body {
+    color: rgb(0,90,171);
+    background-image: url("fabricBg.png");
+}
+
+.jumbotron {
+	background-color: rgb(255,255,255);
+	font-family: georgia;
+	letter-spacing: 2.5px;
+	color: gold;
+	text-shadow: 1px 1px;
+	border-radius: 15px;
+/*	border-style: solid;
+	border-width: 2px;
+	border-color: rgb(1,158,221);*/
+	background-image:-webkit-linear-gradient(whitesmoke 0%, rgb(44,44,44) 100%);
+    background-image:linear-gradient(whitesmoke 15%, rgb(44,44,44) 85%);
+    margin-top: 15px;
+}
+
+.cell {
+	border-style: solid;
+	border-width: 2px;
+	border-color: rgb(1,158,221);
+	margin-top: 5px;
+}
+
+#inputs {
+	background-color: rgb(173,216,230);
+	background-image:-webkit-linear-gradient(#666666 0%, #f00000 100%);
+    background-image:-o-linear-gradient(#666666 0%, #f00000 100%);
+    background-image:linear-gradient(#666666 0%, #f00000 100%);
+    color: gold;
+	font-weight: 900;
+	border-radius: 10px;
+	padding: 10px;
+	margin-bottom: 25px;
+}
+
+#grid {
+	background-color: rgb(1,158,221);
+	background-image:-webkit-linear-gradient(rgb(173,216,230) 0%, dodgerblue 100%);
+    background-image:-o-linear-gradient(rgb(173,216,230) 0%, dodgerblue 100%);
+    background-image:linear-gradient(rgb(173,216,230) 0%, dodgerblue 100%);
+	border-color: rgb(173,216,230);
+	border-radius: 7px;
+	border-width: 10px;
+	border-style: solid;
+}
+
+.step {
+	color: rgb(187,8,38);
+}
+
+.label1 {
+	color: rgb(0,90,171);
+	font-size: 12px;
+}
+
+#A10, #B10, #C10, #D10, #E10 {
+	background-color: rgb(251,198,16);
+	color: (255,255,255);
+	font-size: 17px;
+}
+
+#B11, #C11 {
+	color: (0,0,0);
+	font-size: 8px;
+}
+

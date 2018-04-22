@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Income Allocation Tool</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="https://code.jquery.com/jquery.js"></script>
+</head>
+
+<body>
+<div class="container jumbotron">
+		<center><h2>Income Allocation Tool</h2></center>
+</div>  		
+
+<div class="container" id="inputs"> 
+<form id="target">
+  <div class="row">
+  	<div class="col-3"></div>
+    <div class="form-group col-4">
+		<label for="name">Enter Net Income Amount:</label>
+		<input class="form-control" id="name" maxlength="80" name="name" size="20" type="text" placeholder="$0.00" />
+	</div>
+    <div class="col-5"></div>	
+  </div>
+  <div class="row">
+  	<div class="col-3"></div>
+	<div class="form-group col-4">
+		<label for="Pay Periods">Pay Period(s):</label>
+		<select class="form-control" id="" name="" title="Pay Periods">
+			<option value="">--None--</option>
+			<option value="Annual">Annual</option>
+			<option value="Monthly">Monthly</option>
+			<option value="Bi-Weekly">Bi-Weekly</option>
+			<option value="Weekly">Weekly</option>
+		</select>
+	</div>
+     <div class="col-2">
+      <input type="submit" id="submit" class="btn btn-primary btn-lg" value="Submit">
+     </div>		
+   </div>
+</form>
+</div>
+
+<!-- Income Table -->
+
+<div class="container" id="grid"> 
+  <!-- Row 3 -->
+  <div class="row" id="title1">
+  	Income Table
+  </div>
+  <div class="row" id="table1row1">
+	<div class="text-center cell col-xs-3" id="A3">
+		--80%--
+	</div>
+	<div class="text-center cell col-xs-3" id="B3">
+		--5%--
+	</div>
+	<div class="text-center cell col-xs-3" id="C3">
+		--5%--
+	</div>
+	<div class="text-center cell col-xs-3" id="D3">
+		--10%--
+	</div>
+  </div>
+
+    <!-- Row 5 -->
+  <div class="row" id="row5">
+	<div class="text-center cell col-xs-6" id="A5">
+		Lifestyle
+	</div>
+	<!-- <div class="text-center cell col-xs-3" id="B5">
+		-
+	</div> -->
+	<div class="text-center cell col-xs-3" id="C5">
+		Retirement
+	</div>
+	<div class="text-center cell col-xs-3" id="D5">
+		Portfolio
+	</div>
+  </div>
+
+  <!-- Row 6 -->
+  <div class="row" id="row6">
+	<div class="text-center cell col-xs-3" id="A6">
+		$0.00
+	</div>
+	<div class="text-center cell col-xs-3" id="B6">
+		$0.00
+	</div>
+	<div class="text-center cell col-xs-3" id="C6">
+		$0.00 
+	</div>
+	<div class="text-center cell col-xs-3" id="D6">
+		$0.00
+	</div>
+  </div>
+</div>
+
+<br><br><center>
+Do you agree and does this make sense to you?
+<button class="btn btn-lg btn-dark">Proceed >></button>
+<br><br></center>
+
+<!-- Lump Sum Table -->
+
+<div class="container" id="grid"> 
+  <!-- Row 3 -->
+  <div class="row" id="title2">
+  	Lump Sum Table
+  </div>
+  <div class="row" id="row3">
+	<div class="text-center cell col-xs-4" id="A3">
+		Lifestyle
+	</div>
+	<div class="text-center cell col-xs-4" id="B3">
+		Retirement
+	</div>
+	<div class="text-center cell col-xs-4" id="C3">
+		Portfolio
+	</div>
+  </div>
+
+    <!-- Row 5 -->
+  <div class="row" id="row5">
+	<div class="text-center cell col-xs-6" id="A5">
+		Lifestyle
+	</div>
+	<!-- <div class="text-center cell col-xs-3" id="B5">
+		-
+	</div> -->
+	<div class="text-center cell col-xs-3" id="C5">
+		Retirement
+	</div>
+	<div class="text-center cell col-xs-3" id="D5">
+		Portfolio
+	</div>
+  </div>
+
+  <!-- Row 6 -->
+  <div class="row" id="row6">
+	<div class="text-center cell col-xs-3" id="A6">
+		$0.00
+	</div>
+	<div class="text-center cell col-xs-3" id="B6">
+		$0.00
+	</div>
+	<div class="text-center cell col-xs-3" id="C6">
+		$0.00 
+	</div>
+	<div class="text-center cell col-xs-3" id="D6">
+		$0.00
+	</div>
+  </div>
+</div>
+
+
+<!-- Disclaimer -->
+
+<div class="container"> 
+  <div class="row">
+	<div class="text-center col-xs-12">
+		<div class="row">
+			<div class="text-center col-xs-12">
+				<h3>"<<>>"</h3>
+			</div>	
+		</div>
+		<div class="row">
+			<div class="text-center col-xs-12">
+				<h6>*</h6>
+			</div>	
+		</div>
+		<div class="row">
+			<div class="text-center col-xs-12">
+				<h5>**</h5>
+			</div>	
+		</div>
+	</div>
+  </div>
+</div>
+<script src="app.js"></script>
+</body>
+</html>
