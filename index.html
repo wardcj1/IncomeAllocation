@@ -14,12 +14,11 @@
 </div>  		
 
 <div class="container" id="inputs"> 
-<form id="target">
   <div class="row">
   	<div class="col-3"></div>
     <div class="form-group col-4">
 		<label for="name">Enter Net Income Amount:</label>
-		<input class="form-control" id="name" maxlength="80" name="name" size="20" type="text" placeholder="$0.00" />
+		<input class="form-control" id="netIncome" maxlength="80" name="Net Income" size="20" type="text" placeholder="$0.00" />
 	</div>
     <div class="col-5"></div>	
   </div>
@@ -27,7 +26,7 @@
   	<div class="col-3"></div>
 	<div class="form-group col-4">
 		<label for="Pay Periods">Pay Period(s):</label>
-		<select class="form-control" id="" name="" title="Pay Periods">
+		<select class="form-control" id="payPeriod" name="Pay Period" title="Pay Periods">
 			<option value="">--None--</option>
 			<option value="Annual">Annual</option>
 			<option value="Monthly">Monthly</option>
@@ -36,119 +35,124 @@
 		</select>
 	</div>
      <div class="col-2">
-      <input type="submit" id="submit" class="btn btn-primary btn-lg" value="Submit">
+      <button id="submitBtn" class="btn btn-primary btn-lg">Submit</button>
      </div>		
    </div>
-</form>
 </div>
 
-<!-- Income Table -->
+<!-- <p id="test1">This is a paragraph.</p>
+<p id="test2">This is another paragraph.</p>
+<p>Input field: <input type="text" id="test3" value="Mickey Mouse"></p>
+<button id="btn1">Set Text</button>
+<button id="btn2">Set HTML</button>
+<button id="btn3">Set Value</button> -->
 
-<div class="container" id="grid"> 
+<!-- Income Table -->
+<div class="container" id="incomeTable"> 
   <!-- Row 3 -->
   <div class="row" id="title1">
   	Income Table
   </div>
   <div class="row" id="table1row1">
-	<div class="text-center cell col-xs-3" id="A3">
+	<div class="cell text-center col-3" id="A3">
 		--80%--
 	</div>
-	<div class="text-center cell col-xs-3" id="B3">
+	<div class="cell text-center col-3" id="B3">
 		--5%--
 	</div>
-	<div class="text-center cell col-xs-3" id="C3">
+	<div class="cell text-center col-3" id="C3">
 		--5%--
 	</div>
-	<div class="text-center cell col-xs-3" id="D3">
+	<div class="cell text-center col-3" id="D3">
 		--10%--
 	</div>
   </div>
 
     <!-- Row 5 -->
   <div class="row" id="row5">
-	<div class="text-center cell col-xs-6" id="A5">
+	<div class="cell text-center col-6" id="A5">
 		Lifestyle
 	</div>
-	<!-- <div class="text-center cell col-xs-3" id="B5">
+	<!-- <div class="cell text-center col-3" id="B5">
 		-
 	</div> -->
-	<div class="text-center cell col-xs-3" id="C5">
+	<div class="cell text-center col-3" id="C5">
 		Retirement
 	</div>
-	<div class="text-center cell col-xs-3" id="D5">
+	<div class="cell text-center col-3" id="D5">
 		Portfolio
 	</div>
   </div>
 
   <!-- Row 6 -->
   <div class="row" id="row6">
-	<div class="text-center cell col-xs-3" id="A6">
+	<div class="cell text-center col-3" id="A6">
 		$0.00
 	</div>
-	<div class="text-center cell col-xs-3" id="B6">
+	<div class="cell text-center col-3" id="B6">
 		$0.00
 	</div>
-	<div class="text-center cell col-xs-3" id="C6">
+	<div class="cell text-center col-3" id="C6">
 		$0.00 
 	</div>
-	<div class="text-center cell col-xs-3" id="D6">
+	<div class="cell text-center col-3" id="D6">
 		$0.00
 	</div>
   </div>
-</div>
-
 <br><br><center>
 Do you agree and does this make sense to you?
-<button class="btn btn-lg btn-dark">Proceed >></button>
+<button id="proceedBtn" class="btn btn-lg btn-dark">Proceed >></button>
 <br><br></center>
+</div>
+
 
 <!-- Lump Sum Table -->
 
-<div class="container" id="grid"> 
+<div class="container" id="lumpSumTable"> 
   <!-- Row 3 -->
   <div class="row" id="title2">
   	Lump Sum Table
   </div>
   <div class="row" id="row3">
-	<div class="text-center cell col-xs-4" id="A3">
+	<div class="cell text-center col-4" id="A3">
 		Lifestyle
 	</div>
-	<div class="text-center cell col-xs-4" id="B3">
+	<div class="cell text-center col-4" id="B3">
 		Retirement
 	</div>
-	<div class="text-center cell col-xs-4" id="C3">
+	<div class="cell text-center col-4" id="C3">
 		Portfolio
 	</div>
   </div>
 
     <!-- Row 5 -->
   <div class="row" id="row5">
-	<div class="text-center cell col-xs-6" id="A5">
+	<div class="cell text-center col-6" id="A5">
 		Lifestyle
 	</div>
-	<!-- <div class="text-center cell col-xs-3" id="B5">
+	<!-- <div class="cell text-center col-3" id="B5">
 		-
 	</div> -->
-	<div class="text-center cell col-xs-3" id="C5">
+	<div class="cell text-center col-3" id="C5">
 		Retirement
 	</div>
-	<div class="text-center cell col-xs-3" id="D5">
+	<div class="cell text-center col-3" id="D5">
 		Portfolio
 	</div>
   </div>
 
   <!-- Row 6 -->
   <div class="row" id="row6">
-	<div class="text-center cell col-xs-3" id="A6">
+	<div class="cell text-center col-3" id="A6">
 		$0.00
 	</div>
-	<div class="text-center cell col-xs-3" id="B6">
+	<div class="cell text-center col-3" id="B6">
 		$0.00
 	</div>
-	<div class="text-center cell col-xs-3" id="C6">
+	<div class="cell text-center col-3" id="C6">
 		$0.00 
 	</div>
-	<div class="text-center cell col-xs-3" id="D6">
+	<div class="cell text-center col-3" id="D6">
 		$0.00
 	</div>
   </div>
@@ -157,27 +161,28 @@ Do you agree and does this make sense to you?
 
 <!-- Disclaimer -->
 
-<div class="container"> 
+<!-- <div class="container"> 
   <div class="row">
-	<div class="text-center col-xs-12">
+	<div class="text-center col-12">
 		<div class="row">
-			<div class="text-center col-xs-12">
+			<div class="text-center col-12">
 				<h3>"<<>>"</h3>
 			</div>	
 		</div>
 		<div class="row">
-			<div class="text-center col-xs-12">
+			<div class="text-center col-12">
 				<h6>*</h6>
 			</div>	
 		</div>
 		<div class="row">
-			<div class="text-center col-xs-12">
+			<div class="text-center col-12">
 				<h5>**</h5>
 			</div>	
 		</div>
 	</div>
   </div>
-</div>
+</div> -->
+
 <script src="app.js"></script>
 </body>
 </html>
