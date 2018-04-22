@@ -17,7 +17,7 @@
   <div class="row">
   	<div class="col-3"></div>
     <div class="form-group col-4">
-		<label for="name">Enter Net Income Amount:</label>
+		<label for="name">Enter your paycheck amount:</label>
 		<input class="form-control" id="netIncome" maxlength="80" name="Net Income" size="20" type="text" placeholder="$0.00" />
 	</div>
     <div class="col-5"></div>	
@@ -25,10 +25,10 @@
   <div class="row">
   	<div class="col-3"></div>
 	<div class="form-group col-4">
-		<label for="Pay Periods">Pay Period(s):</label>
+		<label for="Pay Periods">How often are you paid?</label>
 		<select class="form-control" id="payPeriod" name="Pay Period" title="Pay Periods">
 			<option value="">--None--</option>
-			<option value="Annual">Annual</option>
+			<option value="Annual">Annually</option>
 			<option value="Monthly">Monthly</option>
 			<option value="Bi-Weekly">Bi-Weekly</option>
 			<option value="Weekly">Weekly</option>
@@ -49,113 +49,164 @@
 
 <!-- Income Table -->
 <div class="container" id="incomeTable"> 
-  <!-- Row 3 -->
   <div class="row" id="title1">
-  	Income Table
+  	Income Allocation Table
   </div>
-  <div class="row" id="table1row1">
-	<div class="cell text-center col-3" id="A3">
+
+  <!-- Row 1 -->
+  <div class="row" id="t1r1">
+	<div class="cell text-center col-3" id="t1A1">
 		--80%--
 	</div>
-	<div class="cell text-center col-3" id="B3">
+	<div class="cell text-center col-3" id="t1B1">
 		--5%--
 	</div>
-	<div class="cell text-center col-3" id="C3">
+	<div class="cell text-center col-3" id="t1C1">
 		--5%--
 	</div>
-	<div class="cell text-center col-3" id="D3">
+	<div class="cell text-center col-3" id="t1D1">
 		--10%--
 	</div>
   </div>
 
-    <!-- Row 5 -->
-  <div class="row" id="row5">
-	<div class="cell text-center col-6" id="A5">
+    <!-- Row 2 -->
+  <div class="row" id="t1r2">
+	<div class="cell text-center col-6" id="t1A2">
 		Lifestyle
 	</div>
-	<!-- <div class="cell text-center col-3" id="B5">
+	<!-- <div class="cell text-center col-3" id="t1B2">
 		-
 	</div> -->
-	<div class="cell text-center col-3" id="C5">
+	<div class="cell text-center col-3" id="t1C2">
 		Retirement
 	</div>
-	<div class="cell text-center col-3" id="D5">
+	<div class="cell text-center col-3" id="t1D2">
 		Portfolio
 	</div>
   </div>
 
-  <!-- Row 6 -->
-  <div class="row" id="row6">
-	<div class="cell text-center col-3" id="A6">
+  <!-- Row 3 -->
+  <div class="row" id="t1r3">
+	<div class="cell text-center col-3" id="t1A3">
 		$0.00
 	</div>
-	<div class="cell text-center col-3" id="B6">
+	<div class="cell text-center col-3" id="t1B3">
 		$0.00
 	</div>
-	<div class="cell text-center col-3" id="C6">
+	<div class="cell text-center col-3" id="t1C3">
 		$0.00 
 	</div>
-	<div class="cell text-center col-3" id="D6">
+	<div class="cell text-center col-3" id="t1D3">
 		$0.00
 	</div>
   </div>
 <br><br><center>
 Do you agree and does this make sense to you?
-<button id="proceedBtn" class="btn btn-lg btn-dark">Proceed >></button>
+<button id="proceedBtn1" class="btn btn-lg btn-dark">Proceed >></button>
 <br><br></center>
 </div>
 
-
-<!-- Lump Sum Table -->
-
-<div class="container" id="lumpSumTable"> 
-  <!-- Row 3 -->
+<!-- Budget -->
+<div class="container" id="budget"> 
   <div class="row" id="title2">
-  	Lump Sum Table
+  	Budget
   </div>
-  <div class="row" id="row3">
-	<div class="cell text-center col-4" id="A3">
-		Lifestyle
+
+    <!-- Row 1 -->
+  <div class="row" id="t2r1">
+	<div class="cell text-center col-3" id="t2A1">
+		q1
 	</div>
-	<div class="cell text-center col-4" id="B3">
-		Retirement
+	<div class="cell text-center col-3" id="t2B1">
+	q2
 	</div>
-	<div class="cell text-center col-4" id="C3">
-		Portfolio
+	<div class="cell text-center col-3" id="t2C1">
+		q3
+	</div>
+	<div class="cell text-center col-3" id="t2D1">
+		q4
 	</div>
   </div>
 
-    <!-- Row 5 -->
-  <div class="row" id="row5">
-	<div class="cell text-center col-6" id="A5">
+    <!-- Row 2 -->
+  <div class="row" id="t2r2">
+	<div class="cell text-center col-6" id="t2A2">
 		Lifestyle
 	</div>
-	<!-- <div class="cell text-center col-3" id="B5">
+	<!-- <div class="cell text-center col-3" id="t2B2">
 		-
 	</div> -->
-	<div class="cell text-center col-3" id="C5">
+	<div class="cell text-center col-3" id="t2C2">
 		Retirement
 	</div>
-	<div class="cell text-center col-3" id="D5">
+	<div class="cell text-center col-3" id="t2D2">
 		Portfolio
 	</div>
   </div>
 
-  <!-- Row 6 -->
-  <div class="row" id="row6">
-	<div class="cell text-center col-3" id="A6">
+<br><br><center>
+Can you commit to this budget going forward?
+<button id="proceedBtn2" class="btn btn-lg btn-dark">Proceed >></button>
+<br><br></center>
+</div>
+
+<!-- Lump Sum Table -->
+<div class="container" id="lumpSumTable"> 
+  <div class="row" id="title3">
+  	Lump Sum Allocation Table
+  </div>
+
+  <!-- Row 1 -->
+  <div class="row" id="t3r1">
+	<div class="cell text-center col-4" id="t3A1">
+		Lifestyle
+	</div>
+	<div class="cell text-center col-4" id="t3B1">
+		Retirement
+	</div>
+	<div class="cell text-center col-4" id="t3C1">
+		Portfolio
+	</div>
+  </div>
+
+    <!-- Row 2 -->
+  <div class="row" id="t3r2">
+	<div class="cell text-center col-6" id="t3A2">
+		Lifestyle
+	</div>
+	<!-- <div class="cell text-center col-3" id="t3B2">
+		-
+	</div> -->
+	<div class="cell text-center col-3" id="t3C2">
+		Retirement
+	</div>
+	<div class="cell text-center col-3" id="t3D2">
+		Portfolio
+	</div>
+  </div>
+
+  <!-- Row 3 -->
+  <div class="row" id="t3r3">
+	<div class="cell text-center col-3" id="t3A3">
 		$0.00
 	</div>
-	<div class="cell text-center col-3" id="B6">
+	<div class="cell text-center col-3" id="t3B3">
 		$0.00
 	</div>
-	<div class="cell text-center col-3" id="C6">
+	<div class="cell text-center col-3" id="t3C3">
 		$0.00 
 	</div>
-	<div class="cell text-center col-3" id="D6">
+	<div class="cell text-center col-3" id="t3D3">
 		$0.00
 	</div>
   </div>
+
+<br><br><center>
+What conclusions can you make from this exercise?<br>
+What do you think is your best course of action?<br>
+Are you ready to take the next step?<br>
+<button id="saveBtn" class="btn btn-lg btn-danger">Save</button>
+<br><br></center>
 </div>
 
 
