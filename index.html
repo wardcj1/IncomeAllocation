@@ -5,7 +5,8 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="style.css">
-  <script src="https://code.jquery.com/jquery.js"></script>
+  <!-- <script src="https://code.jquery.com/jquery.js"></script> -->
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 </head>
 
 <body>
@@ -14,10 +15,38 @@
 </div>  		
 
 <div class="container" id="inputs"> 
+<!-- <form> -->
+  <div class="row">
+  	<div class="col-3"></div>
+  	<div class="col-6"><h2>Let's get started!</h2></div>
+  	<div class="col-3"></div>
+  </div>
+
+<!-- start testing -->
+  <div class="row">
+  	<div class="col-3"></div>
+	<div class="col-4">
+		<label for="payPeriod">How often are you paid?</label><br>
+		<select class="form-control" id="single">
+			<option value="">--None--</option>
+			<option value="Annually">Annually</option>
+			<option value="Monthly">Monthly</option>
+			<option value="Bi-Weekly">Bi-Weekly</option>
+			<option value="Weekly">Weekly</option>
+		</select>
+	</div>	
+<!-- 		<select id="multiple" multiple="multiple">
+  			<option>Multiple</option>
+			<option>Multiple3</option>
+		</select> -->
+  	<div class="col-5"></div>
+  </div>
+<!-- stop testing-->
+
   <div class="row">
   	<div class="col-3"></div>
     <div class="form-group col-4">
-		<label for="name">Enter your paycheck amount:</label>
+		<label for="netIncome">Enter your paycheck amount:</label>
 		<input class="form-control" id="netIncome" maxlength="80" name="Net Income" size="20" type="text" placeholder="$0.00" />
 	</div>
     <div class="col-5"></div>	
@@ -25,14 +54,7 @@
   <div class="row">
   	<div class="col-3"></div>
 	<div class="form-group col-4">
-		<label for="Pay Periods">How often are you paid?</label>
-		<select class="form-control" id="payPeriod" name="Pay Period" title="Pay Periods">
-			<option value="">--None--</option>
-			<option value="Annual">Annually</option>
-			<option value="Monthly">Monthly</option>
-			<option value="Bi-Weekly">Bi-Weekly</option>
-			<option value="Weekly">Weekly</option>
-		</select>
+		<!-- <select class="form-control" id="payPeriod" name="Pay Period" title="Pay Periods"> -->
 	</div>
      <div class="col-2">
       <button id="submitBtn" class="btn btn-primary btn-lg">Submit</button>
@@ -40,7 +62,9 @@
    </div>
 </div>
 
-<!-- <p id="test1">This is a paragraph.</p>
+
+<!--
+<p id="test1">This is a paragraph</p>
 <p id="test2">This is another paragraph.</p>
 <p>Input field: <input type="text" id="test3" value="Mickey Mouse"></p>
 <button id="btn1">Set Text</button>
@@ -88,7 +112,7 @@
   <!-- Row 3 -->
   <div class="row" id="t1r3">
 	<div class="cell text-center col-3" id="t1A3">
-		$0.00
+		Pay Period
 	</div>
 	<div class="cell text-center col-3" id="t1B3">
 		$0.00
