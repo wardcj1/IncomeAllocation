@@ -3,31 +3,31 @@
 <head>
     <title>Income Allocation Tool</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+ <!--  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="https://fonts.googleapis.com/css?family=Do+Hyeon|IBM+Plex+Serif" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Do+Hyeon|IBM+Plex+Serif|Lobster" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="style.css">
-  <!-- <script src="https://code.jquery.com/jquery.js"></script> -->
   <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 </head>
 
 <body>
 <div class="container jumbotron">
 		<center><h2>Income Allocation Tool</h2></center>
-</div>  		
+</div>  	
 
 <div class="container" id="inputs"> 
-<!-- <form> -->
   <div class="row">
   	<div class="col-4"></div>
   	<div class="col-8" id="getStarted"><h2>Let's get started!</h2></div>
   	<!-- <div class="col-2"></div> -->
   </div>
 
-<!-- start testing -->
   <div class="row">
   	<div class="col-2"></div>
 	<div class="col-4">
-		<label for="payPeriod">How often are you paid?</label><br>
+		<label for="payPeriod">How often are you paid?</label>
+		<span class="info"> * <span class="infotext">* Help text area words more words description *</span></span>
+		<br>
 		<select class="form-control" id="paySchedule">
 			<option value="">--None--</option>
 			<option value="Annually">Annually</option>
@@ -36,7 +36,6 @@
 			<option value="Weekly">Weekly</option>
 		</select>
 	</div>
-
   	<div class="col-4">
   	 <div>What is your income status?</div>
   	 <div class="custom-control custom-checkbox">
@@ -64,19 +63,10 @@
   </div>
 </div>
 
-
-<!--
-<p id="test1">This is a paragraph</p>
-<p id="test2">This is another paragraph.</p>
-<p>Input field: <input type="text" id="test3" value="Mickey Mouse"></p>
-<button id="btn1">Set Text</button>
-<button id="btn2">Set HTML</button>
-<button id="btn3">Set Value</button> -->
-
 <!-- Income Table -->
 <div class="container" id="incomeTable"> 
   <div class="row" id="title1">
-  	Income Allocation Table
+  	Income Allocation Table - Pay yourself first
   </div>
 
   <!-- Row 1 -->
@@ -127,7 +117,7 @@
 	</div>
   </div>
 <br><br><center>
-Do you agree and does this make sense to you?
+Do you agree with these numbers and does this make sense to you?
 <button id="proceedBtn1" class="btn btn-lg btn-dark">Proceed >></button>
 <br><br></center>
 </div>

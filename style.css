@@ -2,6 +2,37 @@ body {
     color: rgb(0,90,171);
     background-image: url("fabricBg.png");
     font-family: 'IBM Plex Serif', serif;
+    cursor: context-menu;
+}
+
+.info {
+    position: relative;
+    display: inline-block;
+    font-family: 'Lobster';
+	font-size: 18px;
+	color: rgb(50,53,52);
+	cursor: wait;
+}
+
+.infotext {
+    visibility: hidden;
+    width: 255px;
+    font-family: 'IBM Plex Serif', serif;
+    background-color: rgb(50,53,52);
+    color: rgb(135,206,250);
+    text-align: center;
+    border-radius: 6px;
+    border-color: rgb(135,206,250);
+    border-width: 1px;
+    border-style: solid;
+    padding: 5px 0;
+    /* Position the info */
+    position: absolute;
+    z-index: 1;
+}
+
+.info:hover .infotext {
+    visibility: visible;
 }
 
 .jumbotron {
