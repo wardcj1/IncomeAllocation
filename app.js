@@ -41,6 +41,12 @@ function displayVals() {
   $( "#t1A3" ).html( "<b>Pay Schedule:</b> " + "<br>" + paySchedule);
   $( "#t1B3" ).html( "<b>Income Amount:</b> " + "<br>" + "$ " + netIncome );
   $( "#t1C3" ).html( "<b>Status:</b> " + "<br>" + working + "<br>" + retired);
+
+  // Income Allocation Table - Row 4 
+  $( "#t1A4" ).html( "<b>Bank Checking Account:</b> " + "<br>" + "$ " + (netIncome * 0.8) );
+  $( "#t1B4" ).html( "<b>Bank Savings Account:</b> " + "<br>" + "$ " + (netIncome * 0.05) );
+  $( "#t1C4" ).html( "<b>Individual Retirement Account:</b> " + "<br>" + "$ " + (netIncome * 0.05) );
+  $( "#t1D4" ).html( "<b>Brokerage Account:</b> " + "<br>" + "$ " + (netIncome * 0.10) );
 }
  
 $( "input" ).change( displayVals ); 

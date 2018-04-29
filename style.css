@@ -18,7 +18,7 @@ body {
     visibility: hidden;
     width: 255px;
     font-family: 'IBM Plex Serif', serif;
-    background-color: rgb(50,53,52);
+    background-color: rgba(50,53,52,0.8);
     color: rgb(135,206,250);
     text-align: center;
     border-radius: 6px;
