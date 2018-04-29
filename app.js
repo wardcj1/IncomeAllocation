@@ -47,6 +47,9 @@ function displayVals() {
   $( "#t1B4" ).html( "<b>Bank Savings Account:</b> " + "<br>" + "$ " + (netIncome * 0.05) );
   $( "#t1C4" ).html( "<b>Individual Retirement Account:</b> " + "<br>" + "$ " + (netIncome * 0.05) );
   $( "#t1D4" ).html( "<b>Brokerage Account:</b> " + "<br>" + "$ " + (netIncome * 0.10) );
+
+  // Budget Table - Row 1
+  $( "#t2A1" ).html( "<b>Starting Balance:</b> " + "<br>" + "$ " + (netIncome * 0.8) );
 }
  
 $( "input" ).change( displayVals ); 

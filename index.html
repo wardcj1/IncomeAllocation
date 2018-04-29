@@ -139,39 +139,46 @@ Do you agree with these numbers and does this make sense to you?
 <!-- Budget -->
 <div class="container" id="budget"> 
   <div class="row" id="title2">
-  	Budget
+  	Budget - With inflation around 3.5%, prices double about every 20 years. How long will your money last?
   </div>
-
+	<img src="budgetCalc.jpg" width="100%">
     <!-- Row 1 -->
   <div class="row" id="t2r1">
 	<div class="cell text-center col-3" id="t2A1">
-		q1
 	</div>
 	<div class="cell text-center col-3" id="t2B1">
-	q2
+		<input>Age today?</input> 
 	</div>
 	<div class="cell text-center col-3" id="t2C1">
-		q3
+		<input placeholder="65">Age at Retirement</input>
 	</div>
 	<div class="cell text-center col-3" id="t2D1">
-		q4
+		<input placeholder="2.8%">Inflation Rate</input>
 	</div>
   </div>
 
     <!-- Row 2 -->
   <div class="row" id="t2r2">
-	<div class="cell text-center col-6" id="t2A2">
-		Lifestyle
+	<div class="cell text-center col-3" id="t2A2">
+		Description
 	</div>
-	<!-- <div class="cell text-center col-3" id="t2B2">
-		-
-	</div> -->
+	<div class="cell text-center col-3" id="t2B2">
+		Cost Today
+	</div>
 	<div class="cell text-center col-3" id="t2C2">
-		Retirement
+		Cost at age __
 	</div>
 	<div class="cell text-center col-3" id="t2D2">
-		Portfolio
+		Cost at age 90
 	</div>
+  </div>	
+
+    <!-- Expense Rows Dynamically Rendered-->
+  <div class="row" id="">
+	<div class="cell col-12" id="">
+		--Expense Rows Dynamically Rendered--<br>
+	</div>
+	<a href="" style="color:red"><bold>Add new expense</bold></a>
   </div>
 
 <br><br><center>
@@ -185,7 +192,7 @@ Can you commit to this budget going forward?
   <div class="row" id="title3">
   	Lump Sum Allocation Table
   </div>
-
+	<img src="lumpSumSavingsCalculator.png" width="100%">
   <!-- Row 1 -->
   <div class="row" id="t3r1">
 	<div class="cell text-center col-4" id="t3A1">
@@ -235,7 +242,7 @@ Can you commit to this budget going forward?
 What conclusions can you make from this exercise?<br>
 What do you think is your best course of action?<br>
 Are you ready to take the next step?<br>
-<button id="saveBtn" class="btn btn-lg btn-danger">Save</button>
+<button id="saveBtn" class="btn btn-lg btn-danger">Save your work</button>
 <br><br></center>
 </div>
 
