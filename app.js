@@ -17,23 +17,32 @@ $(document).ready(function(){
 
     $("#submitBtn").click(function(){
         $("#incomeTable").slideToggle();
+        $("#submitBtn").hide();
+        $("#getStarted").hide();      
     });
 
     $("#proceedBtn1").click(function(){
         $("#budget").slideToggle();
+        $("#proceedBtn1").hide();
     });
 
     $("#proceedBtn2").click(function(){
         $("#lumpSumTable").slideToggle();
+        $("#proceedBtn2").hide();
     });
 });
 
 function displayVals() {
-  var singleValues = $( "#single" ).val();
-  var multipleValues = $( "#multiple" ).val() || [];
-  $( "#t1A3" ).html( "<b>Single:</b> " + "<br>" + singleValues + "<br>" +
-    " <b>Multiple:</b> " + "<br>" + multipleValues.join( ", " ) );
+  var paySchedule = $( "#paySchedule" ).val();
+  var netIncome = $( "#netIncome").val();
+  var working = $( "#working:checked" ).val() || "";
+  var retired = $( "#retired:checked" ).val() || "";
+  
+  $( "#t1A3" ).html( "<b>Pay Schedule:</b> " + "<br>" + paySchedule);
+  $( "#t1B3" ).html( "$ " + netIncome );
+  $( "#t1C3" ).html( "<b>Income Status:</b> " + "<br>" + working + "<br>" + retired);
 }
  
+$( "input" ).change( displayVals ); 
 $( "select" ).change( displayVals );
 displayVals();
