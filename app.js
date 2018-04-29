@@ -39,8 +39,8 @@ function displayVals() {
   var retired = $( "#retired:checked" ).val() || "";
   
   $( "#t1A3" ).html( "<b>Pay Schedule:</b> " + "<br>" + paySchedule);
-  $( "#t1B3" ).html( "$ " + netIncome );
-  $( "#t1C3" ).html( "<b>Income Status:</b> " + "<br>" + working + "<br>" + retired);
+  $( "#t1B3" ).html( "<b>Income Amount:</b> " + "<br>" + "$ " + netIncome );
+  $( "#t1C3" ).html( "<b>Status:</b> " + "<br>" + working + "<br>" + retired);
 }
  
 $( "input" ).change( displayVals ); 
