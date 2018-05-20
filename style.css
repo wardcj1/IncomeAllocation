@@ -31,17 +31,22 @@ body {
     z-index: 1;
 }
 
+.material-icons {
+	font-size:18px;
+	color: rgba(135,206,250,0.6);
+	border-radius: 50px;
+    border-color: rgba(135,206,250,0);
+    border-width: 2px;
+    border-style: solid;
+}
+
 .info:hover .infotext {
     visibility: visible;
 }
 
-.material-icons {
-	font-size:18px;
-	color: rgba(255, 215, 0,0.8);
-	border-radius: 50px;
-    border-color: rgb(135,206,250);
-    border-width: 1px;
-    border-style: solid;
+.info:hover .material-icons {
+    color: rgb(135,206,250);
+    border-color: rgba(135,206,250,1);
 }
 
 .jumbotron {
