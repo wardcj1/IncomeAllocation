@@ -49,25 +49,30 @@ body {
     border-color: rgba(135,206,250,1);
 }
 
+#title {
+    text-shadow: 1px 1px 2px black, 2px 2px 5px rgba(44,44,44,1);
+}
+
+h2 {
+    text-shadow: 2px 2px 5px red;
+}
+
 .jumbotron {
 	background-color: rgb(255,255,255);
 	font-family: georgia;
 	letter-spacing: 2.5px;
 	color: rgb(255, 215, 0);
-	text-shadow: 2px 1px;
+	text-shadow: 2px 1px 3px gray;
 	border-radius: 15px;
-/*	border-style: solid;
-	border-width: 2px;
-	border-color: rgb(1,158,221);*/
 	background-image:-webkit-linear-gradient(whitesmoke 0%, rgb(44,44,44) 100%);
     background-image:linear-gradient(whitesmoke 15%, rgb(44,44,44) 85%);
     margin-top: 15px;
 }
 
- #getStarted{
+#getStarted{
 	color: rgb(255, 215, 0);
 	font-family: 'Do Hyeon', sans-serif;
-	text-shadow: 1px 1px;
+	text-shadow: 1px 1px 3px gray;
  }
 
 .cell {
